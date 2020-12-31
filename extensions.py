@@ -55,6 +55,7 @@ class NLOptBuild(build_ext):
             "-DNLOPT_GUILE=OFF",
             "-DNLOPT_MATLAB=OFF",
             "-DNLOPT_OCTAVE=OFF",
+            f"-DCMAKE_BUILD_TYPE={self.config}",
             ext.source_dir.as_posix()
         ]
 
